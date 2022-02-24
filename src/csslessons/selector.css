@@ -1,0 +1,46 @@
+h2{
+    background-color: green;
+    color:white;
+}
+
+h3{
+    background-color:blue;
+    
+}
+
+/* GROUPING OF ELEMENTS */
+h1,h3{
+    color:white;
+}
+
+/* "contextual selector" in CSSallow you to specif different styles for different parts of our dicument,
+you can assign styles directly to specify HTML tags,
+or yoy can create independent classes and assign them to tags in the HTML. */
+
+ul li
+{
+    color:red;
+}
+/* SELCTING PARENT CHILD */
+ ul>li{
+    color:blue;
+}
+li{
+    color:green;
+}
+
+/*selecting class element*/
+.item{
+    color:pink;
+}
+
+/*selecting by id*/
+#list-item
+{
+    color:aqua;
+}
+
+/*selecting by type*/
+input[type="email"]{
+    background-color: yellowgreen;
+}
