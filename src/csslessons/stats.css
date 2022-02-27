@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 
-/* variables */
+
 
 :root {
   font-size: 15px;
@@ -16,7 +16,7 @@
   --bg-light-violet: hsl(293deg, 42%, 35%, 0.24);
 }
 
-/* defaults */
+
 
 *,
 *::after,
@@ -37,7 +37,7 @@ body {
   font-weight: 400;
 }
 
-/* stats card */
+
 
 main {
   min-width: 600px;
@@ -118,7 +118,7 @@ section ul p {
   mix-blend-mode: color-burn;
 }
 
-/* footer */
+
 
 .attribution {
   position: absolute;
@@ -140,7 +140,6 @@ section ul p {
   color: var(--prim-violet);
 }
 
-/* media queries */
 
 @media only screen and (max-width: 1024px) {
   :root {
