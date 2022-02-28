@@ -1,6 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 
-
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--prim-dark-blue);
+  color: var(--neu-white);
+  font-weight: 400;
+}
 
 :root {
   font-size: 15px;
@@ -15,9 +23,6 @@
   --bg-violet: hsl(277deg, 100%, 50%, 0.42);
   --bg-light-violet: hsl(293deg, 42%, 35%, 0.24);
 }
-
-
-
 *,
 *::after,
 *::before {
@@ -25,20 +30,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  font-family: "Inter", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: var(--prim-dark-blue);
-  color: var(--neu-white);
-  font-weight: 400;
-}
-
-
-
 main {
   min-width: 600px;
   z-index: 1;
