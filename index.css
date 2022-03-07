@@ -1,74 +1,47 @@
-div class="container">
-            <ul class="dropdown">
-                <li><a href="#">HOME</a></li>
-                <li>
-                    <ul class="COMPLETED TASKS">
-                    <li><a href="./src/pagea.html">pagea</a></li>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-                    <li><a href="./src/pageb.html">pageb</a></li>
-                
-                
-                    <li><a href="./src/pagec.html">pagec</a></li>
-                
-                
-                    <li><a href="./src/paged.html">paged</a></li>
-                
-                
-                    <li><a href="./src/pagee.html">pagee</a></li>
-                
-                    <li><a href="./src/pagef.html">pagef</a></li>
-                
-                    <li><a href="./src/pageg.html">pageg</a></li>
-                
-                    <li><a href="./src/pageh.html">pageh</a></li>
-                
-                    <li><a href="./src/pagei.html">pagei</a></li>
-                
-                    <li><a href="./src/survey.html">survey</a></li>
-                
-                    <li><a href="./src/tribute.html">tribute</a></li>
-                
-                    <li><a href="./src/child_frame.html">child_frame</a></li>
-                
-                    <li><a href="./src/grand_child_frame.html">grand_child_frame</a></li>
-                
-                    <li><a href="./src/parent.html">parent</a></li>
-                
-                    <li><a href="./src/anchor.html">anchor</a></li>
-                
-                    <li><a href="./src/input_types.html">input_types</a></li>
-                
-                    <li><a href="./src/login.html">login</a></li>
-                
-                    <li><a href="./src/semantics_element.html">semantic elements</a></li>
-                
-                    <li><a href="./src/dom_a.html">dom a</a></li>
-                    <li><a href="./src/dom_b.html">dom b</a></li>
-                    <li><a href="./src/radio_button.html">radio_button</a></li>
-                
-                    <li><a href="./src/readonly.html">readonly</a></li>
-                
-                    <li><a href="./src/local_storage.html">local_storage</a></li>
-                
-                    <li><a href="./src/form.html">form</a></li>
-                
-                    <li><a href="./src/boat.html">BOAT</a></li>
-                
-                    <li><a href="./src/csslessons/qrcode.html">QR CODE</a></li>
-                
-                    <li><a href="./src/csslessons/nft.html">NFT</a></li>
-                
-                    <li><a href="./src/csslessons/order_summary.html">ORDER_SUMMARY</a></li>
-                
-                    <li><a href="./src/csslessons/profilecard.html">profile_card</a></li>
-                
-                    <li><a href="./src/csslessons/3column.html">3_COLUMN</a></li></li>
-                
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </header>
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
 
-    
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
