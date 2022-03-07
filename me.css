@@ -107,6 +107,17 @@ body {
   font-size: 18px;
 }
 
+.floating-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 38%;
+  right: -5%;
+  background: #1da1f2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .floating-icon .fa {
   position: absolute;
   left: 18px;
