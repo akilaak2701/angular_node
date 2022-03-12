@@ -1,0 +1,28 @@
+div{
+      background-image:url(../../images/watch.jpg);
+      border: 5px solid red;
+      color: aquamarine;
+      height: 500px;
+      margin: 100px auto;
+      width: 500px;
+  }
+#div1{
+      background-image:url(../../images/watch.jpg);
+      background-size: 200px;
+      border: 5px solid red;
+      color: aquamarine;
+      height: 500px;
+      margin: 100px auto;
+      width: 500px;
+  }
+#div2{
+      background-image:url(../../images/watch.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      border: 5px solid red;
+      color: aquamarine;
+      height: 500px;
+      margin: 100px auto;
+      width: 500px;
+  }

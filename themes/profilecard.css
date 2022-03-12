@@ -1,0 +1,88 @@
+body,html {
+      box-sizing: border-box;
+      font-family: "Kumbh Sans", sans-serif;
+      font-size: 18px;
+      margin: 0;
+  }
+.container {
+      align-items: center;
+      background-color: #19a2ae;
+      background-image: url("../challenges/downloads/profile-card-component-main/profile-card-component-main/images/bg-pattern-top.svg"), url("../../src/profile-card-component-main/profile-card-component-main/images/bg-pattern-bottom.svg");
+      background-position: right 42vw bottom 45vh, left 45vw top 42vh;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 0 1rem;
+  }
+.card {
+      background-color: white;
+      border-radius: 15px;
+      display: inline-block;
+      max-width: 600px;
+      overflow: hidden;
+  }
+.card-header {
+      display: flex;
+      min-height: 150px;
+  }
+.card-header img {
+      object-fit: cover;
+      object-position: center;
+  }
+.card-body .profile {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 1rem 1.5rem 1rem;
+      position: relative;
+  }
+.card-body .profile-img {
+      border-radius: 100%;
+      border: 5px solid white;
+      position: absolute;
+      top: -3rem;
+  }
+.card-body .profile-details {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+  }
+.card-body .profile-details .name {
+      font-weight: 700;
+  }
+.card-body .profile-details .age {
+      color: #969696;
+  }
+.card-body .profile-details .country {
+      color: #969696;
+      font-size: 0.8rem;
+      margin-top: 8px;
+  }
+.card-footer {
+      border-top: 1px solid #ddd;
+      display: flex;
+      padding: 1.5rem 1rem;
+  }
+.card-footer .social-count {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+  }
+.card-footer .social-count .count {
+      font-weight: 700;
+  }
+.card-footer .social-count .label {
+      color: #969696;
+      font-size: 0.5rem;
+      letter-spacing: 2px;
+      margin-top: 8px;
+  }
+  @media (min-width: 768px) {
+    .container {
+          background-position: right 52vw bottom 35vh, left 50vw top 50vh;
+      }
+  }

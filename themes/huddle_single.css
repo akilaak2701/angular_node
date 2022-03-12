@@ -1,0 +1,127 @@
+article {
+    margin: 2rem 0;
+  }
+.attribution {
+    text-align: center;
+  }
+.attribution a {
+    color: white;
+  }
+.button {
+    background-color: white;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 10px 10px -5px hsl(257, 40%, 20%);
+    color: hsl(257, 40%, 49%);
+    display: inline-block;
+    font-family: Poppins, sans-serif;
+    padding: 1rem 4rem;
+    text-decoration: none;
+  }
+  body {
+    background: hsl(257, 40%, 49%)
+      url("../challenges/downloads/huddle-landing-page-with-single-introductory-section-master/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg")
+      no-repeat top center;
+    background-size: contain;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    max-width: 1228px;
+  }
+h1 {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+img {
+    max-width: 100%;
+  }
+header {
+    padding: 2rem;
+  }
+header img {
+    width: 35vw;
+  }
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+  }
+main {
+    padding: 0 2rem;
+    text-align: center;
+  }
+p {
+    font-size: 1.25rem;
+    line-height: 2;
+    margin: 1rem 0;
+  }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+.social-icons a {
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    display: inline-block;
+    height: 20px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 20px;
+  }
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+  }
+@media only screen and (min-width: 960px) {
+  html,
+  body {
+      height: 100%;
+    }
+  body {
+      background-image: url("../challenges/downloads/huddle-landing-page-with-single-introductory-section-master/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+      background-size: cover;
+      margin: 0 auto;
+    }
+  header img {
+      width: 180px;
+    }
+  main {
+      display: flex;
+      text-align: left;
+    }
+  main > * {
+      flex: 1;
+    }
+  main > article {
+      margin: 0 0 0 2rem;
+    }
+  h1 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+  p {
+      font-size: 1.25rem;
+      line-height: 2;
+      margin: 1rem 0;
+    }
+  .social-icons {
+      justify-content: flex-end;
+      margin: 0 2rem;
+    }
+  }
+@media only screen and (min-width: 1228px) {
+  h1 {
+      font-size: 3rem;
+    }
+  }
+footer {
+    font-size: small;
+  }

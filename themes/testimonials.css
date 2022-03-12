@@ -1,0 +1,160 @@
+.avatar--border-light {
+  border: 2px solid var(--light-gray);
+}
+.avatar-border--primary {
+  border: 2px solid var(--moderate-violet);
+}
+
+body {
+  align-items: center;
+  background-color: var(--light-gray-blue);
+  display: flex;
+  flex-direction: column;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+.card {
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1.5rem;
+}
+
+.card:last-child {
+  margin-bottom: 2rem;
+}
+
+.card-user {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.card-name {
+  font-weight: 600;
+}
+
+.card-name--light {
+  color: var(--light-gray);
+}
+.card-decoration {
+  height: 6rem;
+  opacity: 40%;
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  width: 6rem;
+  z-index: 0;
+}
+
+.card--gray {
+  background-color: var(--dark-gray-blue);
+}
+
+.card--light {
+  background-color: var(--light);
+}
+.card--primary {
+  background-color: var(--moderate-violet);
+  position: relative;
+}
+.card--dark {
+  background-color: var(--dark-black-blue);
+}
+
+footer {
+  color: var(--dark-gray-blue);
+  font-size: 0.875rem;
+  text-align: center;
+ 
+}
+
+footer a {
+  color: var(--moderate-violet);
+  text-decoration: none;
+}
+.header--light {
+  color: var(--light);
+  font-size: 1.5rem;
+}
+.header--dark {
+  color: var(--dark-gray-blue);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.name--light {
+  font-weight: 500;
+  font-size: 0.875rem;
+  opacity: 50%;
+  
+}
+.review-header {
+  margin-bottom: 1rem;
+}
+
+.review-text {
+  opacity: 70%;
+}
+:root {
+  --dark-gray-blue: hsl(217, 19%, 35%);
+  --dark-black-blue: hsl(219, 29%, 14%);
+  --light: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-gray-blue: hsl(210, 46%, 95%);
+  --moderate-violet: hsl(263, 55%, 52%);
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.text--light {
+  color: var(--light);
+}
+
+.user-avatar {
+  border-radius: 50%;
+  height: 2.5rem;
+  margin-right: 1rem;
+  overflow: hidden;
+  width: 2.5rem;
+ 
+}
+.user-avatar img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  
+}
+
+@media screen and (min-width: 1080px) {
+  .testimonials {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80rem;
+    margin: 1rem;
+    row-gap: 2rem;
+  }
+  .card--primary,
+  .card--dark {
+    grid-column: span 2;
+  }
+
+  .card--big {
+    grid-row: 1 / span 2;
+    grid-column: 4 / 5;
+    margin-bottom: 0;
+   
+  }
+
+  .card {
+    margin: 0 1rem;
+  }
+  .card:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #dedfe1;
+  font-family: "Open Sans", sans-serif;
+}
+.btn {
+  background: #1da1f2;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0;
+  padding: 6px 15px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+
+.btn.active {
+  opacity: 1;
+}
+
+.container {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 400px;
+  width: 780px;
+
+}
+.content {
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  padding: 30px 40px;
+  width: 60%;
+
+}
+.data {
+  overflow: hidden;
+  width: 90%;
+}
+.floating-icon {
+  background: #1da1f2;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  position: absolute;
+  right: -5%;
+  top: 38%;
+  width: 50px;
+
+  
+}
+
+.floating-icon .fa {
+  color: #fff;
+  font-size: 20px;
+  left: 18px;
+  position: absolute;
+  top: 15px;
+  transition: all 1s ease;
+}
+
+.floating-icon.active .fa {
+  transform: rotate(45deg);
+  transition: all 1s ease;
+}
+.head {
+  padding-bottom: 30px;
+}
+
+.head p {
+  color: #444444;
+  font-size: 28px;
+  font-weight: 600;
+}
+.head span {
+  color: #aaabaf;
+  font-size: 14px;
+}
+.img-container {
+  float: left;
+  height: 100%;
+  position: relative;
+  width: 40%;
+}
+
+.img-container img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 100%;
+  width: 100%;
+ 
+}
+.inner-data {
+  color: #aaabaf;
+  float: left;
+  text-align: left;
+  width: 70%;
+}
+
+.inner-data p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.inner-data span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.img-container:before {
+ 
+  border-left: 30px solid #1da1f2;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #1da1f2;
+  border-bottom: 30px solid transparent;
+  border-top-left-radius: 5px;
+  cursor: pointer;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+
+}
+
+.img-container:after {
+  color: #fff;
+  content: "\f099";
+  font-family: fontawesome;
+  font-size: 18px;
+  left: 12px;
+  position: absolute;
+  top: 10px;
+
+}
+.wrapper {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+

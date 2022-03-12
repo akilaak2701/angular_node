@@ -1,0 +1,31 @@
+a:link{
+      color: goldenrod;
+      font-size: 35px;
+      text-decoration: none;
+  }
+a:visited{
+      color: orangered;
+  }
+a:hover{
+      color: blue;
+  }
+a:active{
+      color: red;
+  }
+.dropdown-content a{
+      display: none;
+  }
+h1::first-letter{
+      color: brown;
+      font-size: 70px;
+      font-style: bold;
+  }
+h1::before{
+      color: blue;
+      content: "This is";
+  }
+h1::after{
+      color: green;
+      content: "my page";
+      font-size: 50px;
+  }

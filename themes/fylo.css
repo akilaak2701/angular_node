@@ -1,0 +1,153 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+body {
+    background-attachment: fixed;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("../challenges/downloads/fylo-data-storage-component-master/fylo-data-storage-component-master/images/bg-desktop.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: hsl(229, 7%, 55%);
+    font-family: "Raleway", sans-serif;
+  }
+.bubble {
+    bottom: calc(100% + 30px);
+    left: 64%;
+    position: absolute;
+  }
+.circle-indicator {
+    background-color: white;
+    border-radius: 15px;
+    height: 15px;
+    margin: 3px;
+    width: 15px;
+  }
+footer {
+    margin-top: auto;
+  }
+header {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 70px 10px 10px;
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 30px 120px 30px 30px;
+  }
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 180px;
+  }
+.header-content > * {
+    flex: 1 1 auto;
+  }
+.hide {
+    display: none;
+  }
+.highlight {
+    color: hsl(243, 100%, 93%);
+  }
+.main {
+    display: flex;
+    min-width: 900px;
+  }
+main {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 10px 10px 10px;
+    flex: 1 1 500px;
+    margin: 50px 10px 10px 10px;
+    padding: 30px 30px 30px 30px;
+  }
+.menu-icons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+  }
+.menu-icon {
+    align-items: center;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+  }
+.storage-bar {
+    position: relative;
+  }
+.storage-empty {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 20px;
+    height: 20px;
+    margin: 15px 0 5px 0;
+  }
+.storage-empty:hover + .hide {
+    display: block;
+  }
+.storage-left {
+    background: #f5f5f5;
+    border-radius: 10px 10px 0 10px;
+    padding: 20px;
+    position: relative;
+    width: auto;
+  }
+.storage-left:after {
+    border-bottom: 0;
+    border-right: 0;
+    border-top-color: #f5f5f5;
+    border: 38px solid transparent;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: auto;
+    margin-bottom: -20px;
+    margin-left: -18px;
+    position: absolute;
+    width: 0;
+  }
+.storage-left-msg {
+    color: black;
+    font-size: xx-large;
+    font-weight: 700;
+  }
+.storage-used {
+    align-items: center;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 20px;
+    display: flex;
+    height: 20px;
+    justify-content: flex-end;
+    width: calc((815 / 1000) * 100%);
+  }
+.storage-label {
+    display: flex;
+    justify-content: space-between;
+  }
+.wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+@media all and (max-width: 1000px) {
+      storage-left:after {
+        display: none;
+      }
+
+    .main {
+        flex-wrap: wrap;
+        max-width: auto;
+        min-width: auto;
+      }
+    main {
+        margin-top: 10px;
+      }
+    .storage-left {
+        border-radius: 10px;
+      }
+    }
